@@ -9,6 +9,9 @@
 // print out file as designed
 
 // TODO: read keyboard q to quit instead of ctrl c
+//       more generic list of file types to read (rs, java, json, py)
+//       colored text
+//       quick printing blocks of text (instantly print out section between {}
 
 use glob::glob;
 use rand::distributions::{Distribution, Uniform};
