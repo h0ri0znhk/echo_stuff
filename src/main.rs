@@ -9,9 +9,11 @@
 //  print out file as designed
 
 // TODO: read keyboard q to quit instead of ctrl c
-//       more generic list of file types to read (rs, java, json, py)
+//       more generic list of file types to read when nesting through directory (rs, java, json, py)
 //       colored text
 //       quick printing blocks of text (instantly print out section between {}
+//       load in code through github (randomized / by repo)
+//       Beeping sounds and stuff because they're cool also
 
 use glob::glob;
 use rand::distributions::{Distribution, Uniform};
@@ -21,8 +23,6 @@ use std::path::{Path, PathBuf};
 use std::{thread, time};
 use structopt::StructOpt;
 use std::collections::HashSet;
-use glob::glob_with;
-use glob::MatchOptions;
 
 const PAUSE: [u16; 5] = [15, 25, 35, 35, 100];
 
